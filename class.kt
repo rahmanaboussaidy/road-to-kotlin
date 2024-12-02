@@ -32,3 +32,26 @@ class Student {
         return "Student(name='$name', age=$age)"
     }
 }
+
+
+class userName {
+    var name: String = "rahman"
+        set(value) {
+            if (value.matches(Regex("^[a-z]+$"))) {
+                field = value
+            } else {
+                println("Invalid value: '$value'. Name must contain only lowercase letters.")
+            }
+        }
+}
+
+fun main() {
+    val userName = userName()
+    println(userName.name)
+
+    userName.name = "ali"
+    println(userName.name)
+
+    userName.name = "Ali123"
+    println(userName.name)
+}
