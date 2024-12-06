@@ -61,3 +61,34 @@ fun main() {
 // {apple=100, kiwi=190, orange=100}
 //sampleEnd
 }
+
+
+//exercise
+fun main() {
+    val greenNumbers = listOf(1, 4, 23)
+    val redNumbers = listOf(17, 2)
+// Write your code here
+    val jumla = greenNumbers.count() + redNumbers.count()
+    man()
+    mali()
+}
+
+
+fun man() {
+    val SUPPORTED = setOf("HTTP", "HTTPS", "FTP")
+    val requested = "smtp"
+    val isSupported = requested.uppercase()
+    SUPPORTED
+    println("Support for $requested: $isSupported")
+}
+
+
+fun mali(){
+    val number2word = mapOf(
+        1 to "one",
+        2 to "two",
+        3 to "three"
+    )
+    val n = 2
+    println("$n is spelt as '${number2word[n]}'")
+}
