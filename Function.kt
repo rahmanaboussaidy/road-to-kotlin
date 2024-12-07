@@ -28,3 +28,7 @@ fun details(name: String, age: Int,address: String){
 
 //function signature
 fun details(name: String, age: Int,address: String)
+
+// single epression function
+fun square(x: Int) = x * x
+println(square(4)) // Output: 16
