@@ -29,7 +29,11 @@ fun main() {
     val date = "January 1"
     val reminder = nextMeeting + date
     println(reminder)
-        
+
+    //splitting a variables
+    val (firstName, lastName) = "John Doe".split(" ")
+    println("First Name: $firstName, Last Name: $lastName")
+
     //Escape sequences
     println("Say \"mambo\"")
     }
