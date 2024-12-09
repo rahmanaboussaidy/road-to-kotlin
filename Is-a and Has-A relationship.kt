@@ -26,7 +26,7 @@ class Dog : Animal() {
     fun bark() = println("The dog barks.")
 }
 
-fun main() {
+fun main () {
     val dog = Dog()
     dog.eat()  // Inherited from Animal
     dog.bark() // Specific to Dog
@@ -38,9 +38,13 @@ open class Animal {
     open val sound: String = "Generic Animal Sound"
 }
 
+
+
 class Dog : Animal() {
     override val sound: String = "Bark"
 }
+
+
 
 fun main() {
     val animal: Animal = Dog()
